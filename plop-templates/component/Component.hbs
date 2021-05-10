@@ -1,0 +1,12 @@
+import React from 'react';
+import { useTheme } from '@material-ui/core';
+
+import { {{pascalCase name}}Props } from './{{pascalCase name}}.types';
+import { useStyles } from './{{pascalCase name}}.styles';
+
+export const {{pascalCase name}}: React.FC<{{pascalCase name}}Props> = ({}) => {
+  const theme = useTheme();
+  const classes = useStyles(theme);
+
+  return <>{{pascalCase name}}</>;
+  };
