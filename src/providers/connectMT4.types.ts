@@ -1,9 +1,15 @@
 export type Message = {
   command: string;
-  arguments?: {
-    userId: string;
-    password: string;
-  };
+  arguments?: ArgumentsLogin | ArgumentsSymbol;
+};
+
+export type ArgumentsLogin = {
+  userId: string;
+  password: string;
+};
+
+export type ArgumentsSymbol = {
+  symbol: string;
 };
 
 export type SymbolData = {
